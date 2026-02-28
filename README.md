@@ -1,12 +1,146 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 📝 React Comments Form
 
-Currently, two official plugins are available:
+A simple **React application** that allows users to submit comments with a username, remarks, and rating using controlled form components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✅ User comment submission form
+✅ Controlled inputs using React `useState`
+✅ Dynamic form handling
+✅ Rating system (1–5)
+✅ Simple and beginner-friendly React structure
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+│
+├── App.js
+├── CommentsForm.js
+├── App.css
+└── index.js
+```
+
+---
+
+## ⚙️ Technologies Used
+
+* ⚛️ React.js
+* JavaScript (ES6)
+* HTML5
+* CSS3
+
+---
+
+## 🧩 Components
+
+### 1️⃣ App Component
+
+The main component that renders the `CommentsForm`.
+
+```jsx
+import './App.css'
+import CommentsForm from './CommentsForm'
+
+function App() {
+  return (
+    <>
+      <CommentsForm />
+    </>
+  )
+}
+
+export default App
+```
+
+---
+
+### 2️⃣ CommentsForm Component
+
+Handles:
+
+* Form state management
+* Input changes
+* Form submission
+
+#### State Structure
+
+```js
+{
+  username: "",
+  remarks: "",
+  rating: 5
+}
+```
+
+#### Functionalities
+
+* Uses `useState` for managing form data.
+* Single handler updates multiple inputs using `name` attribute.
+* Prevents page refresh using `event.preventDefault()`.
+
+---
+
+## 🧠 Key Concepts Used
+
+* Controlled Components
+* React Hooks (`useState`)
+* Event Handling
+* Form Handling in React
+* Dynamic State Updates
+
+---
+
+## 🖥️ Installation & Setup
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/your-username/comments-form.git
+```
+
+### 2️⃣ Navigate to Project
+
+```bash
+cd comments-form
+```
+
+### 3️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+### 4️⃣ Run Project
+
+```bash
+npm run dev
+```
+
+App will run at:
+
+```
+http://localhost:5173
+---
+
+## 🔮 Future Improvements
+
+* Store submitted comments
+* Display comment list
+* Form validation
+* Toast notifications
+* Backend integration (API)
+
+---
+
+## 👩‍💻 Author
+
+**Khushboo Mishra**
+IT Engineer | React Learner | Software Developer
+
+
